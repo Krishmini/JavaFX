@@ -18,15 +18,15 @@ public class InscriptionController {
     private Button handleCancel;
 
     @FXML
-    private TextField usernameField; // Nom d'utilisateur
+    private TextField usernameField;
     @FXML
-    private TextField prenomField; // Prénom
+    private TextField prenomField;
     @FXML
-    private TextField emailField; // Email
+    private TextField emailField;
     @FXML
-    private PasswordField passwordField; // Mot de passe
+    private PasswordField passwordField;
     @FXML
-    private PasswordField confirmPasswordField; // Confirmation mot de passe
+    private PasswordField confirmPasswordField;
 
     @FXML
     protected void handleInscription() {
@@ -46,11 +46,9 @@ public class InscriptionController {
             return;
         }
 
-        // Logique pour enregistrer l'utilisateur ici
         System.out.println("Inscription réussie pour : " + username);
         errorLabel.setText("Inscription réussie !");
 
-        // Réinitialiser les champs
         usernameField.clear();
         prenomField.clear();
         emailField.clear();

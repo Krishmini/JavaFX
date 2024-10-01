@@ -9,13 +9,19 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class StartApplication extends Application {
+    private Stage mainStage;
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("connexionView.fxml"));
+        this.mainStage = stage;
+        FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("InscriptionView.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hi!");
-        stage.setScene(scene);
-        stage.show();
+        this.mainStage.setTitle("Hello!");
+        this.mainStage.setScene(scene);
+        this.mainStage.show();
+    }
+
+    public static void changeScene(String InscriptionViewFxml) throws IOException{
+
     }
 
     public static void main(String[] args) {
