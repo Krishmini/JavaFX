@@ -1,4 +1,14 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="javafx.fxml.FXML" />
+    </list>
+  </component>
+=======
+<project version="4">
+>>>>>>> b03703c3edc65a0ba1e5781447c7efc4dd252db6
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">

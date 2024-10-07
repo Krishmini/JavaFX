@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="appli.refait_todolistfx.accueil.InscriptionController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="10" vgap="10">
+        <Label text="Inscription" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label text="Nom" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="nomField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Prénom" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="prenomField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="Email" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="emailField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+        <Label text="Mot de passe" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <PasswordField fx:id="passwordField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+        <Label text="Confirmation" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <PasswordField fx:id="confirmationField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+        <Button text="Inscription" fx:id="inscriptionButton" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+        <Button text="Retour" fx:id="retourButton" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    </GridPane>

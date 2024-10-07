@@ -1,5 +1,17 @@
 package database;
 
+<<<<<<< HEAD
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class Database {
+    private String serveur ="localhost";
+    private String nomDeLaBase ="cours_todolist";
+    private String utilisateur ="root";
+    private String MotDePasse ="";
+
+=======
 public class Database {
 
     private String serveur = "localhost";
@@ -8,6 +20,7 @@ public class Database {
     private String utilisateur = "root";
 
     private String MotDePasse = "";
+>>>>>>> b03703c3edc65a0ba1e5781447c7efc4dd252db6
     public String getServeur() {
         return serveur;
     }
@@ -44,11 +57,17 @@ public class Database {
         return "http://localhost/phpmyadmin/index.php?route=/database/structure&db=cours_todolist";
     }
 
+<<<<<<< HEAD
+    public Connection getConnexion() {
+        try {
+            Connection cnx = DriverManager.getConnection(this.getUrl(), this.utilisateur, this.MotDePasse);
+=======
 
     public <SQLException extends Throwable> Connection getConnexion(String url, String utilisateur, String motDePasse) {
         try {
             Database DriverManager = null;
             Connection cnx = DriverManager.getConnexion(this.getUrl(), this.utilisateur, this.MotDePasse);
+>>>>>>> b03703c3edc65a0ba1e5781447c7efc4dd252db6
             System.out.println("Etat de la connexion :");
             System.out.println(cnx.isClosed() ? "fermée" : "ouverte \r\n");
             return cnx;
@@ -58,4 +77,8 @@ public class Database {
             return null;
         }
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b03703c3edc65a0ba1e5781447c7efc4dd252db6
 }

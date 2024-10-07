@@ -5,9 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>appli</groupId>
+<<<<<<< HEAD
+    <artifactId>REFAIT_TodoListFX</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>REFAIT_TodoListFX</name>
+=======
     <artifactId>TodoListJX</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>TodoListJX</name>
+>>>>>>> b03703c3edc65a0ba1e5781447c7efc4dd252db6
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,15 +22,29 @@
 
     <dependencies>
         <dependency>
+<<<<<<< HEAD
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>21-ea+24</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <dependency>
+=======
+>>>>>>> b03703c3edc65a0ba1e5781447c7efc4dd252db6
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>9.0.0</version>
         </dependency>
+<<<<<<< HEAD
+
+=======
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>21-ea+24</version>
         </dependency>
+>>>>>>> b03703c3edc65a0ba1e5781447c7efc4dd252db6
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
@@ -106,7 +126,11 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
+<<<<<<< HEAD
+                            <mainClass>appli.refait_todolistfx/appli.refait_todolistfx.StartApplication</mainClass>
+=======
                             <mainClass>appli.todolistjx/appli.todolistjx.StartApplication</mainClass>
+>>>>>>> b03703c3edc65a0ba1e5781447c7efc4dd252db6
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
